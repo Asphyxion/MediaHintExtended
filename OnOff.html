@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <style>
+      body {
+        min-width: 128px;
+		min-height: 150px;
+        overflow-x: hidden;
+		
+      }
+	  
+	  #statustextwrapper { font-family: Arial; font-size: 10px;}
+
+	  
+	.sprite-check-icon{ background-position: 0 0; width: 128px; height: 128px; background-image:url('/csg-523836644f0a2.png'); display:block; } 
+	.sprite-delete-icon{ background-position: 0 -178px; width: 128px; height: 128px; background-image:url('/csg-523836644f0a2.png'); display:block;} 
+	#statusimagewrapper { height: 128px; width: 128px; display:block; margin: 0 0 5px 0; cursor: pointer;}
+
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+    <script src="OnOff.js"></script>
+  </head>
+  <body>
+	<!-- <label for="mediahintstatus">Set MediaHint active</label><input id="mediahintstatus" type="checkbox" /> -->
+  	<div id="statusimagewrapper">
+			
+	</div>
+	<hr />
+	<div id="statustextwrapper">
+	</div>
+  </body>
+</html>
